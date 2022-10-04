@@ -49,6 +49,7 @@ all: ${COMPILER}
 all: ${COMPILER}/main.axf
 
 
+
 debug: CFLAGS+=-g -D DEBUG
 debug: ${COMPILER}
 debug: ${COMPILER}/main.axf
@@ -71,6 +72,8 @@ ${COMPILER}:
 ${COMPILER}/main.axf: ${COMPILER}/main.o
 ${COMPILER}/main.axf: ${COMPILER}/startup_${COMPILER}.o
 ${COMPILER}/main.axf: ${COMPILER}/GPIO.o
+${COMPILER}/main.axf: ${COMPILER}/pll.o
+${COMPILER}/main.axf: ${COMPILER}/systctl.o
 ${COMPILER}/main.axf: main.ld
 SCATTERgcc_main=main.ld
 ENTRY_main=ResetISR

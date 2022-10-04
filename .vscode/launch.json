@@ -7,11 +7,11 @@
     {
     "name": "(gdb) Launch", "type": "cppdbg",
     "request": "launch",
-    "miDebuggerPath": "C:\\Users\\Ravenelco\\Documents\\toolchains\\gcc-arm-none-eabi-10.3-2021.10\\bin\\arm-none-eabi-gdb.exe",
+    "miDebuggerPath": "C:\\Users\\SAUL\\Desktop\\micro\\arm-gnu-toolchain-11.3.rel1-mingw-w64-i686-arm-none-eabi\\bin\\arm-none-eabi-gdb.exe",
     "targetArchitecture": "arm",
     "filterStderr": true,
     "serverStarted": "Info\\ :\\ [\\w\\d\\.]*:\\ hardware",
-    "program": "C:\\Users\\Ravenelco\\Documents\\tiva-rave-master\\Practica_1\\gcc\\blinky.axf",
+    "program": "C:\\Users\\SAUL\\Desktop\\micro\\Practica2Git\\gcc\\main.axf",
     "args": [],
     "stopAtEntry": false,
     "cwd": "${workspaceRoot}",
@@ -21,7 +21,7 @@
     "setupCommands": [
     { "text" : "target extended-remote :3333"},
     { "text" : "monitor halt"},
-    { "text" : "load C:/Users/Ravenelco/Documents/tiva-rave-master/Practica_1/gcc/blinky.axf"}
+    { "text" : "load C:/Users/SAUL/Desktop/micro/Practica2Git/gcc/main.axf"}
     ]
     }
     ]

@@ -8,7 +8,7 @@ extern void Delay(void)
     time = 800000;
     while(time)
     {
-        time--;
+     time--;
     }
 }
 extern void GPIO_Config(void)
